@@ -1,0 +1,15 @@
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\bin\Debug\net10.0\LeafWeighing.Application.deps.json
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\bin\Debug\net10.0\LeafWeighing.Application.dll
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\bin\Debug\net10.0\LeafWeighing.Application.pdb
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\bin\Debug\net10.0\LeafWeighing.Domain.dll
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\bin\Debug\net10.0\LeafWeighing.Domain.pdb
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeighing.Application.csproj.AssemblyReference.cache
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeighing.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeighing.Application.AssemblyInfoInputs.cache
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeighing.Application.AssemblyInfo.cs
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeighing.Application.csproj.CoreCompileInputs.cache
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeig.002A60F6.Up2Date
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeighing.Application.dll
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\refint\LeafWeighing.Application.dll
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\LeafWeighing.Application.pdb
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Application\obj\Debug\net10.0\ref\LeafWeighing.Application.dll

@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\LeafWeighing.Api",
+    "\\LeafWeighing.Api\\Middleware",
+    "\\LeafWeighing.Api\\Properties",
+    "\\LeafWeighing.Application",
+    "\\LeafWeighing.Application\\DTOs",
+    "\\LeafWeighing.Application\\DTOs\\Auth",
+    "\\LeafWeighing.Application\\DTOs\\Collection",
+    "\\LeafWeighing.Domain",
+    "\\LeafWeighing.Infrastructure",
+    "\\LeafWeighing.Infrastructure\\Data"
+  ],
+  "SelectedNode": "\\LeafWeighing.Api\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

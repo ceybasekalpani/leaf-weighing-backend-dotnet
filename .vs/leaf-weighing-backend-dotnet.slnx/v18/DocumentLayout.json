@@ -1,0 +1,853 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\CollectionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Services\\CollectionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Collection\\CollectionSummaryDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Collection\\CollectionSummaryDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\LeafCountService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Services\\LeafCountService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\DeductionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Services\\DeductionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Auth\\LoginResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Auth\\LoginResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Auth\\LoginRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Auth\\LoginRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\UserSetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Domain\\Entities\\UserSetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\LeafWeighing.Api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\LeafWeighing.Api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Domain\\LeafWeighing.Domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\LeafWeighing.Application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\LeafWeighing.Application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Middleware\\GlobalExceptionMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Middleware\\GlobalExceptionMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\LeafCountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Controllers\\LeafCountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\CollectionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Controllers\\CollectionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\DeductionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Controllers\\DeductionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\SuppliersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Api\\Controllers\\SuppliersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\SupplierService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Services\\SupplierService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\UserSetupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Infrastructure\\Repositories\\UserSetupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\RegLeafCountRepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Infrastructure\\Repositories\\RegLeafCountRepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\TrLeafCollectionRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Infrastructure\\Repositories\\TrLeafCollectionRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\GenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Infrastructure\\Repositories\\GenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Data\\SetupDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Infrastructure\\Data\\SetupDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Data\\BoughtLeafDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Infrastructure\\Data\\BoughtLeafDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\ILeafCountService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Services\\ILeafCountService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\ISupplierService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\ISupplierService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\IDeductionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Services\\IDeductionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\ICollectionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Services\\ICollectionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Services\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IUserSetupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Repositories\\IUserSetupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IRegLeafCountRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Repositories\\IRegLeafCountRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\ITrLeafCollectionRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Repositories\\ITrLeafCollectionRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IGenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\Interfaces\\Repositories\\IGenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\RouteTotalWeightDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\LeafCount\\RouteTotalWeightDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Supplier\\SupplierDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Supplier\\SupplierDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\TransactionDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Deduction\\TransactionDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\SaveDeductionRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Deduction\\SaveDeductionRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\DeductionSummaryDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Deduction\\DeductionSummaryDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Collection\\CollectionDetailDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Collection\\CollectionDetailDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Common\\ApiResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Application\\DTOs\\Common\\ApiResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\TrLeafCollectionTemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Domain\\Entities\\TrLeafCollectionTemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\RegLeafCount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LeafWeighing.Domain\\Entities\\RegLeafCount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:04:59.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CollectionService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\CollectionService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Services\\CollectionService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\CollectionService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Services\\CollectionService.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAwHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:05:30.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeductionService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\DeductionService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Services\\DeductionService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\DeductionService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Services\\DeductionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:06:20.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LeafCountService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\LeafCountService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Services\\LeafCountService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\LeafCountService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Services\\LeafCountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:08:11.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CollectionSummaryDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Collection\\CollectionSummaryDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Collection\\CollectionSummaryDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Collection\\CollectionSummaryDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Collection\\CollectionSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:24:10.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Program.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Program.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Program.cs",
+              "RelativeToolTip": "LeafWeighing.Api\\Program.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAowJQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T09:58:22.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:21:23.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Auth\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Auth\\LoginRequestDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Auth\\LoginRequestDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Auth\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:20:44.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "LeafWeighing.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:09:18.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserSetup.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\UserSetup.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Domain\\Entities\\UserSetup.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\UserSetup.cs",
+              "RelativeToolTip": "LeafWeighing.Domain\\Entities\\UserSetup.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwCUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T10:43:02.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LeafWeighing.Api.csproj",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\LeafWeighing.Api.csproj",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\LeafWeighing.Api.csproj",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\LeafWeighing.Api.csproj",
+              "RelativeToolTip": "LeafWeighing.Api\\LeafWeighing.Api.csproj",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-21T04:12:12.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LeafWeighing.Domain.csproj",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj",
+              "RelativeDocumentMoniker": "LeafWeighing.Domain\\LeafWeighing.Domain.csproj",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj",
+              "RelativeToolTip": "LeafWeighing.Domain\\LeafWeighing.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-21T04:24:53.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LeafWeighing.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
+              "RelativeToolTip": "LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-21T04:24:07.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LeafWeighing.Application.csproj",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\LeafWeighing.Application.csproj",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\LeafWeighing.Application.csproj",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\LeafWeighing.Application.csproj",
+              "RelativeToolTip": "LeafWeighing.Application\\LeafWeighing.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-21T04:23:53.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "LeafWeighing.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T04:07:01.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\appsettings.Development.json",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\appsettings.Development.json",
+              "RelativeToolTip": "LeafWeighing.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T04:06:31.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\appsettings.json",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\appsettings.json",
+              "RelativeToolTip": "LeafWeighing.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T04:05:28.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "LeafWeighing.Api\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T04:03:35.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LeafCountController.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\LeafCountController.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Controllers\\LeafCountController.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\LeafCountController.cs",
+              "RelativeToolTip": "LeafWeighing.Api\\Controllers\\LeafCountController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAiwGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T04:02:01.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DeductionsController.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\DeductionsController.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Controllers\\DeductionsController.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\DeductionsController.cs",
+              "RelativeToolTip": "LeafWeighing.Api\\Controllers\\DeductionsController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:11:06.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SuppliersController.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\SuppliersController.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Controllers\\SuppliersController.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\SuppliersController.cs",
+              "RelativeToolTip": "LeafWeighing.Api\\Controllers\\SuppliersController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:10:40.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CollectionsController.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\CollectionsController.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Api\\Controllers\\CollectionsController.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Api\\Controllers\\CollectionsController.cs",
+              "RelativeToolTip": "LeafWeighing.Api\\Controllers\\CollectionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:11:56.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SupplierService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\SupplierService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Services\\SupplierService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Services\\SupplierService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Services\\SupplierService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:07:46.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserSetupRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\UserSetupRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Infrastructure\\Repositories\\UserSetupRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\UserSetupRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Infrastructure\\Repositories\\UserSetupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:04:00.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegLeafCountRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\RegLeafCountRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Infrastructure\\Repositories\\RegLeafCountRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\RegLeafCountRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Infrastructure\\Repositories\\RegLeafCountRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:01:57.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TrLeafCollectionRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\TrLeafCollectionRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Infrastructure\\Repositories\\TrLeafCollectionRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\TrLeafCollectionRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Infrastructure\\Repositories\\TrLeafCollectionRepository.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAiwKAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:38.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:58:12.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SetupDbContext.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Data\\SetupDbContext.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Infrastructure\\Data\\SetupDbContext.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Data\\SetupDbContext.cs",
+              "RelativeToolTip": "LeafWeighing.Infrastructure\\Data\\SetupDbContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAiwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:55:44.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BoughtLeafDbContext.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Data\\BoughtLeafDbContext.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Infrastructure\\Data\\BoughtLeafDbContext.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\Data\\BoughtLeafDbContext.cs",
+              "RelativeToolTip": "LeafWeighing.Infrastructure\\Data\\BoughtLeafDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:52:45.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ILeafCountService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\ILeafCountService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Services\\ILeafCountService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\ILeafCountService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Services\\ILeafCountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:49:51.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ISupplierService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\ISupplierService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\ISupplierService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\ISupplierService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\ISupplierService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:47:13.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IDeductionService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\IDeductionService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Services\\IDeductionService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\IDeductionService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Services\\IDeductionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:45:01.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ICollectionService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\ICollectionService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Services\\ICollectionService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\ICollectionService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Services\\ICollectionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:43:08.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Services\\IAuthService.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:40:45.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IUserSetupRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IUserSetupRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Repositories\\IUserSetupRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IUserSetupRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Repositories\\IUserSetupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:39:44.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IRegLeafCountRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IRegLeafCountRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Repositories\\IRegLeafCountRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IRegLeafCountRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Repositories\\IRegLeafCountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:39:17.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ITrLeafCollectionRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\ITrLeafCollectionRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Repositories\\ITrLeafCollectionRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\ITrLeafCollectionRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Repositories\\ITrLeafCollectionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:38:45.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:34:56.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RouteTotalWeightDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\RouteTotalWeightDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\LeafCount\\RouteTotalWeightDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\RouteTotalWeightDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\LeafCount\\RouteTotalWeightDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:31:21.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LeafCountResponseDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountResponseDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountResponseDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountResponseDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:30:37.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LeafCountRequestDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountRequestDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountRequestDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountRequestDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\LeafCount\\LeafCountRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:30:13.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "SupplierDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Supplier\\SupplierDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Supplier\\SupplierDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Supplier\\SupplierDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Supplier\\SupplierDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:29:14.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TransactionDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\TransactionDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Deduction\\TransactionDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\TransactionDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Deduction\\TransactionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:28:17.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SaveDeductionRequestDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\SaveDeductionRequestDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Deduction\\SaveDeductionRequestDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\SaveDeductionRequestDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Deduction\\SaveDeductionRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:26:50.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DeductionSummaryDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\DeductionSummaryDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Deduction\\DeductionSummaryDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Deduction\\DeductionSummaryDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Deduction\\DeductionSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:26:17.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CollectionDetailDto.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Collection\\CollectionDetailDto.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Collection\\CollectionDetailDto.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Collection\\CollectionDetailDto.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Collection\\CollectionDetailDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:25:28.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Common\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Application\\DTOs\\Common\\ApiResponse.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\DTOs\\Common\\ApiResponse.cs",
+              "RelativeToolTip": "LeafWeighing.Application\\DTOs\\Common\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:08:40.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "RegLeafCount.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\RegLeafCount.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Domain\\Entities\\RegLeafCount.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\RegLeafCount.cs",
+              "RelativeToolTip": "LeafWeighing.Domain\\Entities\\RegLeafCount.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T10:44:17.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "TrLeafCollectionTemp.cs",
+              "DocumentMoniker": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\TrLeafCollectionTemp.cs",
+              "RelativeDocumentMoniker": "LeafWeighing.Domain\\Entities\\TrLeafCollectionTemp.cs",
+              "ToolTip": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\Entities\\TrLeafCollectionTemp.cs",
+              "RelativeToolTip": "LeafWeighing.Domain\\Entities\\TrLeafCollectionTemp.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAiwEsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T10:43:44.311Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

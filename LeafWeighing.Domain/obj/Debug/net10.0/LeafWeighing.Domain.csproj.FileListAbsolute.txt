@@ -1,0 +1,11 @@
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\bin\Debug\net10.0\LeafWeighing.Domain.deps.json
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\bin\Debug\net10.0\LeafWeighing.Domain.dll
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\bin\Debug\net10.0\LeafWeighing.Domain.pdb
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\LeafWeighing.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\LeafWeighing.Domain.AssemblyInfoInputs.cache
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\LeafWeighing.Domain.AssemblyInfo.cs
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\LeafWeighing.Domain.csproj.CoreCompileInputs.cache
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\LeafWeighing.Domain.dll
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\refint\LeafWeighing.Domain.dll
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\LeafWeighing.Domain.pdb
+D:\Leaf_Weighing_App_Backend_C#\leaf-weighing-backend-dotnet\LeafWeighing.Domain\obj\Debug\net10.0\ref\LeafWeighing.Domain.dll
