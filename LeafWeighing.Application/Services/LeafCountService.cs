@@ -46,7 +46,7 @@ public class LeafCountService : ILeafCountService
             Poor = request.Poor,
             User = request.UserName ?? "mobile_user",
             LogTime = DateTime.Now,
-            PcName = Environment.MachineName
+            PcName = request.PcName ?? Environment.MachineName
         };
 
         var saved = await _leafCountRepository.AddLeafCountAsync(leafCount);

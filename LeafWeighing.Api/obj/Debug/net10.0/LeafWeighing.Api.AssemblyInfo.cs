@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LeafWeighing.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+655f3c83e7c40cf59589f191f07b2e907a15a808")]
 [assembly: System.Reflection.AssemblyProductAttribute("LeafWeighing.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LeafWeighing.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

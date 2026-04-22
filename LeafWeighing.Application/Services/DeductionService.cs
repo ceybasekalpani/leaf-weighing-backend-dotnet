@@ -16,38 +16,7 @@ public class DeductionService : IDeductionService
 
     public async Task<DeductionSummaryDto> GetDeductionSummaryAsync(int regNo, string leafType)
     {
-        var summary = await _collectionRepository.GetTodayDeductionSummaryAsync(regNo, leafType);
-
-        if (summary == null)
-        {
-            return new DeductionSummaryDto
-            {
-                TotalBags = 0,
-                TotalGross = 0,
-                TotalBagWeight = 0,
-                TotalCoarse = 0,
-                TotalWater = 0,
-                TotalBoiled = 0,
-                TotalRejected = 0,
-                TotalNetWeight = 0,
-                TransactionCount = 0
-            };
-        }
-
-        var summaryDict = summary as dynamic;
-
-        return new DeductionSummaryDto
-        {
-            TotalBags = Convert.ToDecimal(summaryDict?.TotalBags ?? 0),
-            TotalGross = Convert.ToDecimal(summaryDict?.TotalGross ?? 0),
-            TotalBagWeight = Convert.ToDecimal(summaryDict?.TotalBagWeight ?? 0),
-            TotalCoarse = Convert.ToDecimal(summaryDict?.TotalCoarse ?? 0),
-            TotalWater = Convert.ToDecimal(summaryDict?.TotalWater ?? 0),
-            TotalBoiled = Convert.ToDecimal(summaryDict?.TotalBoiled ?? 0),
-            TotalRejected = Convert.ToDecimal(summaryDict?.TotalRejected ?? 0),
-            TotalNetWeight = Convert.ToDecimal(summaryDict?.TotalNetWeight ?? 0),
-            TransactionCount = Convert.ToInt32(summaryDict?.TransactionCount ?? 0)
-        };
+        return await _collectionRepository.GetTodayDeductionSummaryAsync(regNo, leafType);
     }
 
     public async Task<object> SaveDeductionAsync(SaveDeductionRequestDto request)
@@ -80,7 +49,12 @@ public class DeductionService : IDeductionService
             IsDeduction = true,
             MonthName = monthName,
             DayNo = dayNo,
-            LogTime = DateTime.Now
+            LogTime = DateTime.Now,
+            Spd = 0,
+            RouteDeduct = 0,
+            ExcessLeaf = 0,
+            Transfer = 0,
+            RouteDeductPre = 0  // INT columns in DB — must be set to avoid NOT NULL violation
         };
 
         var saved = await _collectionRepository.AddDeductionAsync(deduction);
@@ -90,26 +64,6 @@ public class DeductionService : IDeductionService
 
     public async Task<IEnumerable<TransactionDto>> GetTodayTransactionsAsync(int regNo)
     {
-        var transactions = await _collectionRepository.GetTodayTransactionsAsync(regNo);
-
-        return transactions.Select(x => new TransactionDto
-        {
-            Ind = x.Ind,
-            RegNo = x.RegNo,
-            SupplierName = x.Dealer,
-            Route = x.Route,
-            LeafType = x.LeafType,
-            Bags = x.Qty,
-            Gross = x.Gross,
-            BagWeight = x.BagWeight,
-            Water = x.Water,
-            Coarce = x.Coarse,
-            Rejected = x.Rejected,
-            Boiled = x.Boild,
-            NetWeight = x.NetWeight,
-            Shift = x.Shift,
-            UserName = x.UserName,
-            LogTime = x.LogTime
-        });
+        return await _collectionRepository.GetTodayTransactionsAsync(regNo);
     }
 }

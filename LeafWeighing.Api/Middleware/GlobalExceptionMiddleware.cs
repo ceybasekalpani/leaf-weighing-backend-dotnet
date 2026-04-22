@@ -32,7 +32,10 @@ public class GlobalExceptionMiddleware
         context.Response.ContentType = "application/json";
         context.Response.StatusCode = StatusCodes.Status500InternalServerError;
 
-        var response = ApiResponse<object>.Fail("Internal server error", exception.Message);
+        var errorDetail = exception.InnerException is not null
+            ? $"{exception.Message} | Inner: {exception.InnerException.Message}"
+            : exception.Message;
+        var response = ApiResponse<object>.Fail("Internal server error", errorDetail);
         var jsonResponse = JsonSerializer.Serialize(response);
 
         await context.Response.WriteAsync(jsonResponse);

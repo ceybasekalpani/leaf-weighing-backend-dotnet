@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using LeafWeighing.Domain.Entities;
+using LeafWeighing.Application.DTOs.Deduction;
+using LeafWeighing.Application.DTOs.Supplier;
 using LeafWeighing.Application.Interfaces.Repositories;
 using LeafWeighing.Infrastructure.Data;
 
@@ -33,68 +35,65 @@ public class TrLeafCollectionRepository : GenericRepository<TrLeafCollectionTemp
         return collections.GroupBy(x => x.RegNo ?? 0);
     }
 
-    public async Task<TrLeafCollectionTemp?> GetSupplierByRegNoAsync(int regNo)
+    public async Task<SupplierDto?> GetSupplierByRegNoAsync(int regNo)
     {
         return await _context.TrLeafCollectionTemp
             .Where(x => x.RegNo == regNo)
             .OrderByDescending(x => x.LogTime)
+            .Select(x => new SupplierDto
+            {
+                RegNo = x.RegNo ?? 0,
+                SupplierName = x.Dealer,
+                Route = x.Route
+            })
             .FirstOrDefaultAsync();
     }
 
-    public async Task<IEnumerable<TrLeafCollectionTemp>> SearchSuppliersAsync(string query)
+    public async Task<IEnumerable<SupplierDto>> SearchSuppliersAsync(string query)
     {
         return await _context.TrLeafCollectionTemp
             .Where(x => x.RegNo.ToString().Contains(query) ||
                         (x.Dealer != null && x.Dealer.Contains(query)))
             .OrderBy(x => x.RegNo)
+            .Select(x => new SupplierDto
+            {
+                RegNo = x.RegNo ?? 0,
+                SupplierName = x.Dealer,
+                Route = x.Route
+            })
+            .Distinct()
             .Take(50)
             .ToListAsync();
     }
 
-    public async Task<object?> GetTodayDeductionSummaryAsync(int regNo, string leafType)
+    public async Task<DeductionSummaryDto> GetTodayDeductionSummaryAsync(int regNo, string leafType)
     {
         var today = DateTime.Today;
 
-        var summary = await _context.TrLeafCollectionTemp
+        var items = await _context.TrLeafCollectionTemp
             .Where(x => x.RegNo == regNo &&
                        x.LeafType == leafType &&
                        x.LogTime.HasValue &&
                        x.LogTime.Value.Date == today)
-            .GroupBy(x => 1)
-            .Select(g => new
-            {
-                TotalBags = g.Where(x => x.IsDeduction == false).Sum(x => x.Qty ?? 0),
-                TotalGross = g.Where(x => x.IsDeduction == false).Sum(x => x.Gross ?? 0),
-                TotalBagWeight = g.Where(x => x.IsDeduction == true).Sum(x => x.BagWeight ?? 0),
-                TotalCoarse = g.Where(x => x.IsDeduction == true).Sum(x => x.Coarse ?? 0),
-                TotalWater = g.Where(x => x.IsDeduction == true).Sum(x => x.Water ?? 0),
-                TotalBoiled = g.Where(x => x.IsDeduction == true).Sum(x => x.Boild ?? 0),
-                TotalRejected = g.Where(x => x.IsDeduction == true).Sum(x => x.Rejected ?? 0),
-                TotalNetWeight = g.Where(x => x.IsDeduction == false).Sum(x => x.NetWeight ?? 0),
-                TransactionCount = g.Count(x => x.IsDeduction == true)
-            })
-            .FirstOrDefaultAsync();
+            .ToListAsync();
 
-        if (summary == null)
+        if (!items.Any()) return new DeductionSummaryDto();
+
+        return new DeductionSummaryDto
         {
-            return new
-            {
-                TotalBags = 0,
-                TotalGross = 0,
-                TotalBagWeight = 0,
-                TotalCoarse = 0,
-                TotalWater = 0,
-                TotalBoiled = 0,
-                TotalRejected = 0,
-                TotalNetWeight = 0,
-                TransactionCount = 0
-            };
-        }
-
-        return summary;
+            TotalBags = items.Where(x => x.IsDeduction == false).Sum(x => x.Qty ?? 0),
+            TotalGross = items.Where(x => x.IsDeduction == false).Sum(x => x.Gross ?? 0),
+            TotalBagWeight = items.Where(x => x.IsDeduction == true).Sum(x => x.BagWeight ?? 0),
+            TotalCoarse = items.Where(x => x.IsDeduction == true).Sum(x => x.Coarse ?? 0),
+            TotalWater = items.Where(x => x.IsDeduction == true).Sum(x => x.Water ?? 0),
+            TotalBoiled = items.Where(x => x.IsDeduction == true).Sum(x => x.Boild ?? 0),
+            TotalRejected = items.Where(x => x.IsDeduction == true).Sum(x => x.Rejected ?? 0),
+            TotalNetWeight = items.Where(x => x.IsDeduction == false).Sum(x => x.NetWeight ?? 0),
+            TransactionCount = items.Count(x => x.IsDeduction == true)
+        };
     }
 
-    public async Task<IEnumerable<TrLeafCollectionTemp>> GetTodayTransactionsAsync(int regNo)
+    public async Task<IEnumerable<TransactionDto>> GetTodayTransactionsAsync(int regNo)
     {
         var today = DateTime.Today;
         return await _context.TrLeafCollectionTemp
@@ -103,6 +102,25 @@ public class TrLeafCollectionRepository : GenericRepository<TrLeafCollectionTemp
                        x.LogTime.Value.Date == today &&
                        x.IsDeduction == true)
             .OrderByDescending(x => x.LogTime)
+            .Select(x => new TransactionDto
+            {
+                Ind = x.Ind,
+                RegNo = x.RegNo,
+                SupplierName = x.Dealer,
+                Route = x.Route,
+                LeafType = x.LeafType,
+                Bags = x.Qty,
+                Gross = x.Gross,
+                BagWeight = x.BagWeight,
+                Water = x.Water,
+                Coarce = x.Coarse,
+                Rejected = x.Rejected,
+                Boiled = x.Boild,
+                NetWeight = x.NetWeight,
+                Shift = x.Shift,
+                UserName = x.UserName,
+                LogTime = x.LogTime
+            })
             .ToListAsync();
     }
 
@@ -139,23 +157,21 @@ public class TrLeafCollectionRepository : GenericRepository<TrLeafCollectionTemp
         var targetDate = new DateTime(int.Parse(year), monthNumber, date);
         var trimmedRoute = routeName.Trim();
 
-        var result = await _context.TrLeafCollectionTemp
+        var items = await _context.TrLeafCollectionTemp
             .Where(x => x.Route != null && x.Route.Trim() == trimmedRoute &&
                        x.LogTime.HasValue && x.LogTime.Value.Date == targetDate)
-            .GroupBy(x => 1)
-            .Select(g => new
-            {
-                TotalGross = g.Sum(x => x.Gross ?? 0),
-                TotalDeductions = g.Sum(x => (x.Coarse ?? 0) + (x.Water ?? 0) + (x.BagWeight ?? 0) +
-                                              (x.Spd ?? 0) + (x.Boild ?? 0) + (x.Rejected ?? 0) +
-                                              (x.RouteDeduct ?? 0) + (x.ExcessLeaf ?? 0) +
-                                              (x.Transfer ?? 0) + (x.RouteDeductPre ?? 0))
-            })
-            .FirstOrDefaultAsync();
+            .ToListAsync();
 
-        if (result == null) return 0;
+        if (!items.Any()) return 0;
 
-        var netWeight = result.TotalGross - result.TotalDeductions;
+        var totalGross = items.Sum(x => x.Gross ?? 0);
+        var totalDeductions = items.Sum(x =>
+            (x.Coarse ?? 0) + (x.Water ?? 0) + (x.BagWeight ?? 0) +
+            (x.Spd ?? 0) + (x.Boild ?? 0) + (x.Rejected ?? 0) +
+            (x.RouteDeduct ?? 0) + (x.ExcessLeaf ?? 0) +
+            (x.Transfer ?? 0) + (x.RouteDeductPre ?? 0));
+
+        var netWeight = totalGross - totalDeductions;
         return netWeight > 0 ? netWeight : 0;
     }
 }

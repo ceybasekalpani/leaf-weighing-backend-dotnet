@@ -9,4 +9,5 @@ public class LeafCountRequestDto
     public int BellowBest { get; set; }
     public int Poor { get; set; }
     public string? UserName { get; set; }
+    public string? PcName { get; set; }
 }

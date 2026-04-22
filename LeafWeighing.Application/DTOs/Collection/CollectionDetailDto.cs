@@ -9,7 +9,7 @@ public class CollectionDetailDto
     public string? SupplierName { get; set; }
     public string? Route { get; set; }
     public string? LeafType { get; set; }
-    public int? Bags { get; set; }
+    public decimal? Bags { get; set; }
     public decimal? Gross { get; set; }
     public decimal? BagWeight { get; set; }
     public decimal? Water { get; set; }

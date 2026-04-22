@@ -71,19 +71,18 @@ public class TrLeafCollectionTemp
     [Column("LogTime")]
     public DateTime? LogTime { get; set; }
 
-    // Additional deduction fields
     [Column("Spd")]
-    public decimal? Spd { get; set; }
+    public int? Spd { get; set; }
 
     [Column("RouteDeduct")]
-    public decimal? RouteDeduct { get; set; }
+    public int? RouteDeduct { get; set; }
 
     [Column("Excess_Leaf")]
-    public decimal? ExcessLeaf { get; set; }
+    public int? ExcessLeaf { get; set; }
 
     [Column("Transfer")]
-    public decimal? Transfer { get; set; }
+    public int? Transfer { get; set; }
 
     [Column("RouteDeductPre")]
-    public decimal? RouteDeductPre { get; set; }
+    public int? RouteDeductPre { get; set; }
 }
