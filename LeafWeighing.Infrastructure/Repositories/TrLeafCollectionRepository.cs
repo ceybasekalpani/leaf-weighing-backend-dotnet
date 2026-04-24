@@ -124,6 +124,26 @@ public class TrLeafCollectionRepository : GenericRepository<TrLeafCollectionTemp
             .ToListAsync();
     }
 
+    // TrLeafCollectionRepository.cs - Add this implementation
+public async Task<IEnumerable<string>> GetDistinctRoutesFromDeductionsAsync()
+{
+    try
+    {
+        var routes = await _context.TrLeafCollectionTemp
+            .Where(x => x.Route != null && x.Route != "" && x.IsDeduction == true)
+            .Select(x => x.Route)
+            .Distinct()
+            .OrderBy(r => r)
+            .ToListAsync();
+            
+        return routes;
+    }
+    catch (Exception ex)
+    {
+        // Log error if you have logger, otherwise just return empty list
+        return new List<string>();
+    }
+}
     public async Task<TrLeafCollectionTemp> AddDeductionAsync(TrLeafCollectionTemp deduction)
     {
         deduction.IsDeduction = true;

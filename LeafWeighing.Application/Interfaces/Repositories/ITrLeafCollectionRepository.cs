@@ -14,4 +14,5 @@ public interface ITrLeafCollectionRepository : IGenericRepository<TrLeafCollecti
     Task<IEnumerable<TransactionDto>> GetTodayTransactionsAsync(int regNo);
     Task<TrLeafCollectionTemp> AddDeductionAsync(TrLeafCollectionTemp deduction);
     Task<decimal> GetRouteTotalWeightAsync(string routeName, int date, string month);
+    Task<IEnumerable<string>> GetDistinctRoutesFromDeductionsAsync();
 }

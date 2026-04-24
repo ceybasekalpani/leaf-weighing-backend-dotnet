@@ -16,11 +16,24 @@ public class LeafCountService : ILeafCountService
         _collectionRepository = collectionRepository;
     }
 
-    public async Task<IEnumerable<string>> GetDistinctRoutesAsync()
-    {
-        return await _leafCountRepository.GetDistinctRoutesAsync();
-    }
-
+    // LeafCountService.cs - Update GetDistinctRoutesAsync method
+public async Task<IEnumerable<string>> GetDistinctRoutesAsync()
+{
+    // Get routes from leaf counts (existing functionality)
+    var leafCountRoutes = await _leafCountRepository.GetDistinctRoutesAsync();
+    
+    // Get routes from deductions (new functionality)
+    var deductionRoutes = await _collectionRepository.GetDistinctRoutesFromDeductionsAsync();
+    
+    // Combine and return distinct routes from both sources
+    var allRoutes = leafCountRoutes
+        .Union(deductionRoutes)
+        .Where(r => !string.IsNullOrWhiteSpace(r))
+        .OrderBy(r => r)
+        .ToList();
+    
+    return allRoutes;
+}
     public async Task<RouteTotalWeightDto> GetRouteTotalWeightAsync(string routeName, int date, string month)
     {
         var totalWeight = await _collectionRepository.GetRouteTotalWeightAsync(routeName, date, month);
