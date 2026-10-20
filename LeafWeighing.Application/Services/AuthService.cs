@@ -8,6 +8,7 @@ using LeafWeighing.Application.DTOs.Auth;
 using LeafWeighing.Application.Interfaces.Repositories;
 using LeafWeighing.Application.Interfaces.Services;
 using LeafWeighing.Domain.Entities;
+using LeafWeighing.Application.Security;
 
 namespace LeafWeighing.Application.Services;
 
@@ -58,7 +59,9 @@ public class AuthService : IAuthService
                     Report = user.BlReport,
                     Transfer = user.BlTransfer,
                     LeafEditDel = user.BlLeafEditDel,
-                    BackDays = user.BackDays
+                    BackDays = user.BackDays,
+                    IsCanAddDeduction = user.AppPermissions?.IsCanAddDeduction ?? false,
+                    IsCanAddCount = user.AppPermissions?.IsCanAddCount ?? false
                 }
             }
         };
@@ -73,7 +76,10 @@ public class AuthService : IAuthService
         {
             new Claim(ClaimTypes.NameIdentifier, user.Ind.ToString()),
             new Claim(ClaimTypes.Name, user.UserName ?? string.Empty),
-            new Claim(ClaimTypes.GivenName, user.FullName ?? string.Empty)
+            new Claim(ClaimTypes.GivenName, user.FullName ?? string.Empty),
+            new Claim(PermissionClaimTypes.IsAdmin, user.Admin == true ? "true" : "false"),
+            new Claim(PermissionClaimTypes.CanAddDeduction, (user.AppPermissions?.IsCanAddDeduction ?? false) ? "true" : "false"),
+            new Claim(PermissionClaimTypes.CanAddCount, (user.AppPermissions?.IsCanAddCount ?? false) ? "true" : "false")
         };
 
         var token = new JwtSecurityToken(

@@ -86,5 +86,6 @@ public class BoughtLeafDbContext : DbContext
             entity.Property(e => e.LogTime).HasColumnName("LogTime");
             entity.Property(e => e.PcName).HasColumnName("PC_Name");
         });
+
     }
 }

@@ -7,18 +7,26 @@ namespace LeafWeighing.Infrastructure.Repositories;
 
 public class UserSetupRepository : GenericRepository<UserSetup>, IUserSetupRepository
 {
-    private readonly SetupDbContext _context;
+    private readonly SetupDbContext _setupContext;
 
     public UserSetupRepository(SetupDbContext context) : base(context)
     {
-        _context = context;
+        _setupContext = context;
     }
 
     public async Task<UserSetup?> GetUserByCredentialsAsync(string username, string password)
     {
-        return await _context.UserSetup
-            .FirstOrDefaultAsync(x => x.UserName == username &&
-                                     x.Password == password &&
-                                     x.Active == true);
+        var loginIdentifier = username.Trim();
+        var users = _setupContext.UserSetup
+            .AsNoTracking()
+            .Include(x => x.AppPermissions)
+            .Where(x => x.Password == password && x.Active == true);
+
+        if (int.TryParse(loginIdentifier, out var userId))
+        {
+            return await users.FirstOrDefaultAsync(x => x.Ind == userId);
+        }
+
+        return await users.FirstOrDefaultAsync(x => x.UserName == loginIdentifier);
     }
 }

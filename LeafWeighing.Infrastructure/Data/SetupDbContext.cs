@@ -11,6 +11,7 @@ public class SetupDbContext : DbContext
     }
 
     public DbSet<UserSetup> UserSetup { get; set; }
+    public DbSet<UserPermission> UserPermissions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -33,6 +34,23 @@ public class SetupDbContext : DbContext
             entity.Property(e => e.BlTransfer).HasColumnName("Bl_Transfer");
             entity.Property(e => e.BlLeafEditDel).HasColumnName("Bl_LeafEditDel");
             entity.Property(e => e.BackDays).HasColumnName("BackDays");
+        });
+
+        modelBuilder.Entity<UserPermission>(entity =>
+        {
+            entity.ToTable("UserPermissions", "dbo");
+            entity.HasKey(e => e.UserInd);
+            entity.Property(e => e.UserInd).HasColumnName("UserInd");
+            entity.Property(e => e.IsCanAddDeduction)
+                .HasColumnName("IsCanAddDeduction")
+                .HasDefaultValue(true);
+            entity.Property(e => e.IsCanAddCount)
+                .HasColumnName("IsCanAddCount")
+                .HasDefaultValue(true);
+            entity.HasOne(e => e.User)
+                .WithOne(e => e.AppPermissions)
+                .HasForeignKey<UserPermission>(e => e.UserInd)
+                .OnDelete(DeleteBehavior.Cascade);
         });
     }
 }

@@ -9,6 +9,7 @@ using LeafWeighing.Application.Interfaces.Services;
 using LeafWeighing.Application.Services;
 using LeafWeighing.Infrastructure.Data;
 using LeafWeighing.Infrastructure.Repositories;
+using LeafWeighing.Application.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -88,6 +89,16 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy(PermissionPolicies.AdminOnly,
+        policy => policy.RequireClaim(PermissionClaimTypes.IsAdmin, "true"));
+    options.AddPolicy(PermissionPolicies.CanAddDeduction,
+        policy => policy.RequireClaim(PermissionClaimTypes.CanAddDeduction, "true"));
+    options.AddPolicy(PermissionPolicies.CanAddCount,
+        policy => policy.RequireClaim(PermissionClaimTypes.CanAddCount, "true"));
+});
+
 // Configure Database Connections
 var boughtLeafConnectionString = builder.Configuration.GetConnectionString("BoughtLeafDatabase");
 var setupConnectionString = builder.Configuration.GetConnectionString("SetupDatabase");
@@ -113,6 +124,7 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<ITrLeafCollectionRepository, TrLeafCollectionRepository>();
 builder.Services.AddScoped<IRegLeafCountRepository, RegLeafCountRepository>();
 builder.Services.AddScoped<IUserSetupRepository, UserSetupRepository>();
+builder.Services.AddScoped<IUserPermissionRepository, UserPermissionRepository>();
 
 // Register Services
 builder.Services.AddScoped<IAuthService, AuthService>();
@@ -120,6 +132,7 @@ builder.Services.AddScoped<ICollectionService, CollectionService>();
 builder.Services.AddScoped<IDeductionService, DeductionService>();
 builder.Services.AddScoped<ISupplierService, SupplierService>();
 builder.Services.AddScoped<ILeafCountService, LeafCountService>();
+builder.Services.AddScoped<IUserPermissionService, UserPermissionService>();
 
 // Configure logging
 builder.Logging.ClearProviders();

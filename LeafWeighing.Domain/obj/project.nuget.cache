@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "P9japCVNiO0=",
+  "dgSpecHash": "efruW9w4MKI=",
   "success": true,
   "projectFilePath": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\CeybaseIT\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.21\\microsoft.netcore.app.ref.9.0.21.nupkg.sha512",
+    "C:\\Users\\CeybaseIT\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.21\\microsoft.windowsdesktop.app.ref.9.0.21.nupkg.sha512",
+    "C:\\Users\\CeybaseIT\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.21\\microsoft.aspnetcore.app.ref.9.0.21.nupkg.sha512"
+  ],
   "logs": []
 }

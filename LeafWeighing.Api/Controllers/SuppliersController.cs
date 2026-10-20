@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using LeafWeighing.Application.DTOs.Common;
 using LeafWeighing.Application.Interfaces.Services;
+using LeafWeighing.Application.Security;
 
 namespace LeafWeighing.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize(Policy = PermissionPolicies.CanAddDeduction)]
 public class SuppliersController : ControllerBase
 {
     private readonly ISupplierService _supplierService;

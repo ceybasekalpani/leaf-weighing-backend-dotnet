@@ -2,11 +2,14 @@ using Microsoft.AspNetCore.Mvc;
 using LeafWeighing.Application.DTOs.Common;
 using LeafWeighing.Application.DTOs.LeafCount;
 using LeafWeighing.Application.Interfaces.Services;
+using LeafWeighing.Application.Security;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LeafWeighing.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize(Policy = PermissionPolicies.CanAddCount)]
 public class LeafCountController : ControllerBase
 {
     private readonly ILeafCountService _leafCountService;

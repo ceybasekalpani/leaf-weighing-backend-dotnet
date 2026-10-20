@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using LeafWeighing.Application.DTOs.Collection;
 using LeafWeighing.Application.DTOs.Common;
 using LeafWeighing.Application.Interfaces.Services;
@@ -7,6 +8,7 @@ namespace LeafWeighing.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class CollectionsController : ControllerBase
 {
     private readonly ICollectionService _collectionService;

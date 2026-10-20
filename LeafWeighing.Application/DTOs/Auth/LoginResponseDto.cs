@@ -25,4 +25,6 @@ public class UserPermissionsDto
     public bool? Transfer { get; set; }
     public bool? LeafEditDel { get; set; }
     public int? BackDays { get; set; }
+    public bool IsCanAddDeduction { get; set; }
+    public bool IsCanAddCount { get; set; }
 }

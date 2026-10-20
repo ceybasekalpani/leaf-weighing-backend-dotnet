@@ -46,4 +46,6 @@ public class UserSetup
 
     [Column("BackDays")]
     public int? BackDays { get; set; }
+
+    public UserPermission? AppPermissions { get; set; }
 }
