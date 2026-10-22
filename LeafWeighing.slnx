@@ -1,2 +1,6 @@
 <Solution>
+  <Project Path="LeafWeighing.Api/LeafWeighing.Api.csproj" />
+  <Project Path="LeafWeighing.Application/LeafWeighing.Application.csproj" />
+  <Project Path="LeafWeighing.Domain/LeafWeighing.Domain.csproj" />
+  <Project Path="LeafWeighing.Infrastructure/LeafWeighing.Infrastructure.csproj" />
 </Solution>

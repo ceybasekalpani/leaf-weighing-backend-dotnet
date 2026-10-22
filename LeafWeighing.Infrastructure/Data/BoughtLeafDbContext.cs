@@ -48,6 +48,8 @@ public class BoughtLeafDbContext : DbContext
             entity.Property(e => e.BagWeight).HasColumnName("BagWeight");
             entity.Property(e => e.Boild).HasColumnName("Boild");
             entity.Property(e => e.NetWeight).HasColumnName("NetWeight");
+            entity.Property(e => e.SuperDeduction).HasColumnName("SuperDeduction");
+            entity.Property(e => e.NormalDeduction).HasColumnName("NormalDeduction");
 
             // DB type: int → entity decimal? — converter reads int, returns decimal?
             entity.Property(e => e.Water).HasColumnName("Water").HasConversion(intDbToDecimal);

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LeafWeighing.Domain.Entities;
 
-[Table("UserSetup", Schema = "dbo")]
+[Table("UserSetup", Schema = "CollectionApp")]
 public class UserSetup
 {
     [Key]

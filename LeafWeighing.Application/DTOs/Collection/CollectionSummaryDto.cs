@@ -6,12 +6,16 @@ public class CollectionSummaryDto
     public string? SupplierName { get; set; }
     public string? Route { get; set; }
     public string Bags { get; set; } = "0";
+    public string RawGross { get; set; } = "0";
+    // Original gross minus SuperDeduction and NormalDeduction.
     public string Gross { get; set; } = "0";
     public string TotalBagWeight { get; set; } = "0";
     public string TotalCoarce { get; set; } = "0";
     public string TotalWater { get; set; } = "0";
     public string TotalBoiled { get; set; } = "0";
     public string TotalRejected { get; set; } = "0";
+    public string TotalSuperDeduction { get; set; } = "0";
+    public string TotalNormalDeduction { get; set; } = "0";
     public string NetWeight { get; set; } = "0";
     public int TransactionCount { get; set; }
     public int CollectionCount { get; set; }
