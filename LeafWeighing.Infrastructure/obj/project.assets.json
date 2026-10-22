@@ -4740,11 +4740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
       "projectName": "LeafWeighing.Infrastructure",
-      "projectPath": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
+      "projectPath": "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\CeybaseIT\\.nuget\\packages\\",
-      "outputPath": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\obj\\",
+      "outputPath": "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4767,11 +4767,11 @@
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\LeafWeighing.Application.csproj": {
-              "projectPath": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\LeafWeighing.Application.csproj"
+            "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\LeafWeighing.Application.csproj": {
+              "projectPath": "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Application\\LeafWeighing.Application.csproj"
             },
-            "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj": {
-              "projectPath": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj"
+            "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj": {
+              "projectPath": "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Domain\\LeafWeighing.Domain.csproj"
             }
           }
         }

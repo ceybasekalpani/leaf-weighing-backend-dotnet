@@ -11,11 +11,14 @@ public class TransactionDto
     public string? LeafType { get; set; }
     public int? Bags { get; set; }
     public decimal? Gross { get; set; }
+    public decimal? RawGross { get; set; }
     public decimal? BagWeight { get; set; }
     public decimal? Water { get; set; }
     public decimal? Coarce { get; set; }
     public decimal? Rejected { get; set; }
     public decimal? Boiled { get; set; }
+    public int? SuperDeduction { get; set; }
+    public int? NormalDeduction { get; set; }
     public decimal? NetWeight { get; set; }
     public string? Shift { get; set; }
     public string? UserName { get; set; }

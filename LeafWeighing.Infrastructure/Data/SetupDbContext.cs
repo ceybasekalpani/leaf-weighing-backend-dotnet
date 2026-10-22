@@ -19,7 +19,7 @@ public class SetupDbContext : DbContext
 
         modelBuilder.Entity<UserSetup>(entity =>
         {
-            entity.ToTable("UserSetup", "dbo");
+            entity.ToTable("UserSetup", "CollectionApp");
             entity.HasKey(e => e.Ind);
             entity.Property(e => e.Ind).HasColumnName("Ind");
             entity.Property(e => e.FullName).HasColumnName("FullName");
@@ -38,7 +38,7 @@ public class SetupDbContext : DbContext
 
         modelBuilder.Entity<UserPermission>(entity =>
         {
-            entity.ToTable("UserPermissions", "dbo");
+            entity.ToTable("UserPermissions", "CollectionApp");
             entity.HasKey(e => e.UserInd);
             entity.Property(e => e.UserInd).HasColumnName("UserInd");
             entity.Property(e => e.IsCanAddDeduction)

@@ -11,6 +11,8 @@ public class SaveDeductionRequestDto
     public int Water { get; set; }
     public int Boiled { get; set; }
     public int Rejected { get; set; }
+    public int SuperDeduction { get; set; }
+    public int NormalDeduction { get; set; }
     public string? UserName { get; set; }
     public string? Mode { get; set; }
     public string? PcName { get; set; }

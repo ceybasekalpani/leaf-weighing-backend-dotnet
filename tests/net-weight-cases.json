@@ -1,0 +1,92 @@
+[
+  {
+    "name": "all seven deductions, excluding unrelated columns and stale net",
+    "expected": 720,
+    "rows": [
+      {
+        "Gross": 1000,
+        "BagWeight": 10,
+        "Water": 20,
+        "Coarse": 30,
+        "Rejected": 40,
+        "Boild": 50,
+        "SuperDeduction": 60,
+        "NormalDeduction": 70,
+        "NetWeight": 9999,
+        "Spd": 100,
+        "RouteDeduct": 100,
+        "RouteDeductPre": 100,
+        "Transfer": 100,
+        "ExcessLeaf": 100
+      }
+    ],
+    "expectedGross": 870
+  },
+  {
+    "name": "collection and saved deduction rows counted once, preserving decimals",
+    "expected": 972.75,
+    "rows": [
+      {
+        "Gross": 1000,
+        "BagWeight": 5.25,
+        "Water": 2,
+        "Boild": 1.125,
+        "SuperDeduction": 3,
+        "NormalDeduction": 4,
+        "IsDeduction": false,
+        "NetWeight": 1000
+      },
+      {
+        "Gross": 0,
+        "BagWeight": 2.5,
+        "Water": 1,
+        "Coarse": 3,
+        "Rejected": 2,
+        "Boild": 0.375,
+        "SuperDeduction": 2,
+        "NormalDeduction": 1,
+        "IsDeduction": true,
+        "NetWeight": 0
+      }
+    ],
+    "expectedGross": 990
+  },
+  {
+    "name": "missing values are zero",
+    "expected": 0,
+    "rows": [
+      {}
+    ],
+    "expectedGross": 0
+  },
+  {
+    "name": "negative net follows the formula",
+    "expected": -7,
+    "rows": [
+      {
+        "Gross": 5,
+        "BagWeight": 10,
+        "NormalDeduction": 2
+      }
+    ],
+    "expectedGross": 3
+  },
+  {
+    "name": "money precision",
+    "expected": 10.1231,
+    "rows": [
+      {
+        "Gross": 10.1234,
+        "BagWeight": 0.0001,
+        "Boild": 0.0002
+      }
+    ],
+    "expectedGross": 10.1234
+  },
+  {
+    "name": "empty selection",
+    "expected": 0,
+    "rows": [],
+    "expectedGross": 0
+  }
+]

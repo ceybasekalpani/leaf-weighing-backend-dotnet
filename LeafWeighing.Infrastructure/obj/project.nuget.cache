@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GmNOpEbOPrM=",
+  "dgSpecHash": "vtGEwQt7ahk=",
   "success": true,
-  "projectFilePath": "D:\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
+  "projectFilePath": "D:\\Leaf_Weigh_App\\backend\\Leaf_Weighing_App_Backend_C#\\leaf-weighing-backend-dotnet\\LeafWeighing.Infrastructure\\LeafWeighing.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CeybaseIT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\CeybaseIT\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

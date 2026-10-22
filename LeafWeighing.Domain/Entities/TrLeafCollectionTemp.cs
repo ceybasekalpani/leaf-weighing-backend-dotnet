@@ -44,6 +44,12 @@ public class TrLeafCollectionTemp
     [Column("Boild")]
     public decimal? Boild { get; set; }
 
+    [Column("SuperDeduction")]
+    public int? SuperDeduction { get; set; } = 0;
+
+    [Column("NormalDeduction")]
+    public int? NormalDeduction { get; set; } = 0;
+
     [Column("NetWeight")]
     public decimal? NetWeight { get; set; }
 
