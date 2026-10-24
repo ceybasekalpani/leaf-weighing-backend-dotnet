@@ -26,7 +26,7 @@ public class UserSetup
     [Column("AdminLevel")]
     public int? AdminLevel { get; set; }
 
-    [Column("Active")]
+    [Column("IsActive")]
     public bool? Active { get; set; }
 
     [Column("TempWorker")]

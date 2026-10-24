@@ -19,7 +19,7 @@ public class SetupDbContext : DbContext
 
         modelBuilder.Entity<UserSetup>(entity =>
         {
-            entity.ToTable("UserSetup", "CollectionApp");
+            entity.ToTable("UserSetup", "dbo");
             entity.HasKey(e => e.Ind);
             entity.Property(e => e.Ind).HasColumnName("Ind");
             entity.Property(e => e.FullName).HasColumnName("FullName");
@@ -27,7 +27,7 @@ public class SetupDbContext : DbContext
             entity.Property(e => e.Password).HasColumnName("Password");
             entity.Property(e => e.Admin).HasColumnName("Admin");
             entity.Property(e => e.AdminLevel).HasColumnName("AdminLevel");
-            entity.Property(e => e.Active).HasColumnName("Active");
+            entity.Property(e => e.Active).HasColumnName("IsActive");
             entity.Property(e => e.TempWorker).HasColumnName("TempWorker");
             entity.Property(e => e.BlConfirm).HasColumnName("Bl_Confirm");
             entity.Property(e => e.BlReport).HasColumnName("Bl_Report");
