@@ -38,7 +38,7 @@ public class SetupDbContext : DbContext
 
         modelBuilder.Entity<UserPermission>(entity =>
         {
-            entity.ToTable("UserPermissions", "CollectionApp");
+            entity.ToTable("UserPermissions", "dbo");
             entity.HasKey(e => e.UserInd);
             entity.Property(e => e.UserInd).HasColumnName("UserInd");
             entity.Property(e => e.IsCanAddDeduction)

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LeafWeighing.Domain.Entities;
 
-[Table("UserPermissions", Schema = "CollectionApp")]
+[Table("UserPermissions", Schema = "dbo")]
 public class UserPermission
 {
     [Key]
