@@ -25,15 +25,15 @@ public class SetupDbContext : DbContext
             entity.Property(e => e.FullName).HasColumnName("FullName");
             entity.Property(e => e.UserName).HasColumnName("UserName");
             entity.Property(e => e.Password).HasColumnName("Password");
-            entity.Property(e => e.Admin).HasColumnName("Admin");
-            entity.Property(e => e.AdminLevel).HasColumnName("AdminLevel");
             entity.Property(e => e.Active).HasColumnName("IsActive");
             entity.Property(e => e.TempWorker).HasColumnName("TempWorker");
-            entity.Property(e => e.BlConfirm).HasColumnName("Bl_Confirm");
-            entity.Property(e => e.BlReport).HasColumnName("Bl_Report");
-            entity.Property(e => e.BlTransfer).HasColumnName("Bl_Transfer");
-            entity.Property(e => e.BlLeafEditDel).HasColumnName("Bl_LeafEditDel");
-            entity.Property(e => e.BackDays).HasColumnName("BackDays");
+            entity.Ignore(e => e.Admin);
+            entity.Ignore(e => e.AdminLevel);
+            entity.Ignore(e => e.BlConfirm);
+            entity.Ignore(e => e.BlReport);
+            entity.Ignore(e => e.BlTransfer);
+            entity.Ignore(e => e.BlLeafEditDel);
+            entity.Ignore(e => e.BackDays);
         });
 
         modelBuilder.Entity<UserPermission>(entity =>

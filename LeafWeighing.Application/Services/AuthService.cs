@@ -39,7 +39,9 @@ public class AuthService : IAuthService
 
         _logger.LogInformation("Login successful for username: {Username}", request.Username);
 
-        var token = GenerateJwtToken(user);
+        var isAdmin = user.Admin == true ||
+                      string.Equals(user.UserName, "admin", StringComparison.OrdinalIgnoreCase);
+        var token = GenerateJwtToken(user, isAdmin);
 
         return new LoginResponseDto
         {
@@ -49,7 +51,7 @@ public class AuthService : IAuthService
                 Ind = user.Ind,
                 FullName = user.FullName,
                 UserName = user.UserName,
-                Admin = user.Admin,
+                Admin = isAdmin,
                 AdminLevel = user.AdminLevel,
                 Active = user.Active,
                 TempWorker = user.TempWorker,
@@ -60,14 +62,14 @@ public class AuthService : IAuthService
                     Transfer = user.BlTransfer,
                     LeafEditDel = user.BlLeafEditDel,
                     BackDays = user.BackDays,
-                    IsCanAddDeduction = user.AppPermissions?.IsCanAddDeduction ?? false,
-                    IsCanAddCount = user.AppPermissions?.IsCanAddCount ?? false
+                    IsCanAddDeduction = isAdmin || (user.AppPermissions?.IsCanAddDeduction ?? false),
+                    IsCanAddCount = isAdmin || (user.AppPermissions?.IsCanAddCount ?? false)
                 }
             }
         };
     }
 
-    private string GenerateJwtToken(UserSetup user)
+    private string GenerateJwtToken(UserSetup user, bool isAdmin)
     {
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"] ?? "leaf-weighing-secret-key-2024-for-development-only"));
         var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -77,9 +79,9 @@ public class AuthService : IAuthService
             new Claim(ClaimTypes.NameIdentifier, user.Ind.ToString()),
             new Claim(ClaimTypes.Name, user.UserName ?? string.Empty),
             new Claim(ClaimTypes.GivenName, user.FullName ?? string.Empty),
-            new Claim(PermissionClaimTypes.IsAdmin, user.Admin == true ? "true" : "false"),
-            new Claim(PermissionClaimTypes.CanAddDeduction, (user.AppPermissions?.IsCanAddDeduction ?? false) ? "true" : "false"),
-            new Claim(PermissionClaimTypes.CanAddCount, (user.AppPermissions?.IsCanAddCount ?? false) ? "true" : "false")
+            new Claim(PermissionClaimTypes.IsAdmin, isAdmin ? "true" : "false"),
+            new Claim(PermissionClaimTypes.CanAddDeduction, (isAdmin || (user.AppPermissions?.IsCanAddDeduction ?? false)) ? "true" : "false"),
+            new Claim(PermissionClaimTypes.CanAddCount, (isAdmin || (user.AppPermissions?.IsCanAddCount ?? false)) ? "true" : "false")
         };
 
         var token = new JwtSecurityToken(

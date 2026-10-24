@@ -19,7 +19,6 @@ public class UserSetupRepository : GenericRepository<UserSetup>, IUserSetupRepos
         var loginIdentifier = username.Trim();
         var users = _setupContext.UserSetup
             .AsNoTracking()
-            .Include(x => x.AppPermissions)
             .Where(x => x.Password == password && x.Active == true);
 
         if (int.TryParse(loginIdentifier, out var userId))
